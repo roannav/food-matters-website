@@ -8,6 +8,7 @@ $sidebar-collapsed-width: 80px;
 @import './layout';
 @import './sidebar';
 @import './menu';
+@import './button';
 
 * {
   box-sizing: border-box;
@@ -80,6 +81,7 @@ a {
       img.pie {
         width: 160px;
         margin-bottom: 10px;
+        border-radius: $border-radius;
       }
       a {
         color: #fff;
@@ -145,7 +147,7 @@ a {
   text-align: center;
   white-space: nowrap;
   vertical-align: baseline;
-  border-radius: 0.25rem;
+  border-radius: $border-radius;
   color: #fff;
   background-color: #6c757d;
 

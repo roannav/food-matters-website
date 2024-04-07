@@ -1,0 +1,20 @@
+@mixin styledButton($color) {
+  color: $color;
+  background-color: #eee;
+  border: 1px solid $color;
+  border-radius: $border-radius;
+}
+
+.button {
+  &.danger {
+    @include styledButton(red);
+  }
+
+  &.warning {
+    @include styledButton(orange);
+  }
+
+  &.success {
+    @include styledButton(green);
+  }
+}
